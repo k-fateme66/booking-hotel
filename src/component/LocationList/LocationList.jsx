@@ -4,7 +4,9 @@ import Loader from "../../Loader/Loader";
 import { Link } from "react-router-dom";
 
 function LocationList() {
-  const { data, isLoding } = useFetch("http://localhost:5000/hotels", "");
+  //const BASE_URL = "http://localhost:5000/hotels";
+  const BASE_URL = "https://test-api-react.vercel.app/hotels";
+  const { data, isLoding } = useFetch(BASE_URL, "");
   if (isLoding) return <Loader />;
   return (
     <div className="nearbyLocation">
