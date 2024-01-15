@@ -13,7 +13,7 @@ import toast from "react-hot-toast";
 import useLocationUrl from "../../hooks/useLocationUrl";
 
 export default function Map({ markerLocations }) {
-  const [mapCenter, setMapCenter] = useState([20, 4]);
+  const [mapCenter, setMapCenter] = useState([50.2805957141596, 5.888671875]);
   const [lat, lng] = useLocationUrl();
   const {
     isLoading: isLoadingPostion,
