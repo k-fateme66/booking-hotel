@@ -5,7 +5,8 @@ import axios from "axios";
 import toast from "react-hot-toast";
 
 const HotelsContext = createContext();
-const BASE_URL = "http://localhost:5000/hotels";
+//const BASE_URL = "http://localhost:5000/hotels";
+const BASE_URL = "https://test-api-react.vercel.app/hotels";
 export default function HotelsProvider({ children }) {
   const [searchParams, setSearchParams] = useSearchParams();
   const destination = searchParams.get("destination");
